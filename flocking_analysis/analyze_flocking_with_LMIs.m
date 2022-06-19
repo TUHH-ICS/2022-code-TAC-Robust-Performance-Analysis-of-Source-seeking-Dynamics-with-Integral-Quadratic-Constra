@@ -74,8 +74,11 @@ LMI_obj=get_LMI_flocking(A0,B0,C10,C20,D10,D20,dim,M,M);
 LMIp=LMI_obj(vars.X,vars.lambda1,vars.lambda2,tol,vars.mu_var);
 LMI1=T1'*LMIp*T1;
 LMI2=T2'*LMIp*T2;
-max(eig(LMI2)) % needs to be less than 0
-max(eig(LMI1+LMI1'))% verify that this is zero
+if status==1
+    max(eig(LMI2))<-tol % verify that this is less than 0
+    abs(max(eig(LMI1+LMI1')))<1e-12% verify that this is zero
+end
+
 %% Helper functions
 function [status,variables]=verify_stab_flocking(dim,tol,T2,A0,B0,C10,C20,D10,D20,M1,M2)
  % This function runs the stab analysis LMI with cvx

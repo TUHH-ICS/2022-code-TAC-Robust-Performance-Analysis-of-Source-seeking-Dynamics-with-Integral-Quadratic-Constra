@@ -64,7 +64,7 @@ G_veh=define_G_quad_wrapped(dim,kp,kd);
 % parts.
     
 multiplier_flag=[1,60,61,59];
-for i=[1,4]
+for i=1:4
     switch multiplier_flag(1,i)
     case 1
         multiplier_class.id=1;

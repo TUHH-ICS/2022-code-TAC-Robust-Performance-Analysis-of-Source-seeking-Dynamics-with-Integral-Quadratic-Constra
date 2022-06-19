@@ -232,7 +232,7 @@ for n_sim=1:length(c_fric_vec)
 
     % Resample the data. The function uses a ZOH resampling approach 
     [t_sampled, sampled] = leech.resample(dTAnimate);
-     save(['traj',int2str(c_fric_vec(n_sim))],'t_sampled','sampled')
+     save(['data\traj',int2str(c_fric_vec(n_sim))],'t_sampled','sampled')
 end
 plot_trajectories
 %% Animate simulation results
