@@ -6,7 +6,7 @@
 
 This repository contains the simulation code to reproduce the tables and figures presented in
 
-A. Datar and C. Hespe and H. Werner, "Robust Performance Analysis of Source-Seeking Dynamics with Integral Quadratic Constraints", 2022
+> A. Datar and C. Hespe and H. Werner, "Robust Performance Analysis of Source-Seeking Dynamics with Integral Quadratic Constraints", 2022
 
 The code has the following 7 entry points:
 1. Quadrotor robustness analysis (corresponding to Fig.3 from the paper): quadrotor_robustness\main_quadrotor_example.m 
