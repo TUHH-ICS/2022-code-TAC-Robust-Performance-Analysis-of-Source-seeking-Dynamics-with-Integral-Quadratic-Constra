@@ -23,7 +23,7 @@ These will produce among others the material presented in the paper.
 
 To run the simulation files, some additional packages need to be installed first.
 1. Install [CVX](http://cvxr.com/cvx/download/)
-2. For the flocking simulation (item 7 above), a simulation library needs to be imported which can be done by running
+2. For the flocking simulation (item 7 above), a simulation library (found on [Github](https://github.com/TUHH-ICS/MAS-Simulation)) needs to be imported which can be done by running
 ```shell
 git submodule update --init
 ``` 
