@@ -27,7 +27,7 @@ profile clear
 
 % Seed the pseudo random number generator. This is required if we want
 % reproducible simulation, e. g. for profiling the code.
-rng(100);
+rng(75);
 c_fric_vec=[2,3,4,5];
 for n_sim=1:length(c_fric_vec)
 
@@ -54,7 +54,7 @@ for n_sim=1:length(c_fric_vec)
 
     switch netType
         case 1
-            range   = 7*1.2;      % Range of the radio communication
+            range   = Inf;      % Range of the radio communication
             Network = IdealNetwork(agentCount, dT, dimension, range);
         case 2
             range     = 10;    % Range of the radio communication
